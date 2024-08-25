@@ -3,7 +3,7 @@ Kafka is a message broker, it is responsible for facilitating communication and 
 applications or systems. Its primary function is to decouple producers from the consumers. The Message broker acts as a mediator and ensures that messages are delivered efficiently. 
 Producers and consumers do not need to know about each other, allowing async communication.
 
-To test the application, start kafka server:
+To test the application, start kafka server or use docker compose file:
 1. download the latest kafka and extract it(To download and install Kafka, please refer to the official guide [here](https://kafka.apache.org/quickstart).)
 2. Start the Kafka Server
  Run the following commands in order to start all services in the correct order:
@@ -16,6 +16,14 @@ Open another terminal session and run:
 ```
 $ bin/kafka-server-start.sh config/server.properties
 ```
+
+Or run docker-compose with IDE, or use:
+```
+docker-compose up -d
+```
+Find details here:
+https://medium.com/@amberkakkar01/getting-started-with-apache-kafka-on-docker-a-step-by-step-guide-48e71e241cf2
+
 Once all services have successfully launched, you will have a basic Kafka environment running and ready to use.
 
 before you can write your first events, you must create a topic. Open another terminal session and run:
@@ -97,6 +105,9 @@ Kafka provides StringSerializer and StringDeserializer classes, but for sending 
 ### Guides
 * https://www.youtube.com/watch?v=KQDTtvZMS9c&t=939s
 * https://www.baeldung.com/spring-kafka
+* https://medium.com/@amberkakkar01/getting-started-with-apache-kafka-on-docker-a-step-by-step-guide-48e71e241cf2
+* next part to be implemented:
+  https://howtodoinjava.com/kafka/spring-boot-with-kafka/
 
 
 
