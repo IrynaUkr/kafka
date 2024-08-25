@@ -89,8 +89,9 @@ using @KafkaListener annotation.
 
 It can be done using either application property file or config class.
 
-The reading and writing message configured by SpringBoot Kafka, 
-for the first version it is done for String.
+Apache Kafka stores and transports data in byte format. There are numbers build in  StringDeserializers and deStringDeserializers
+Kafka provides StringSerializer and StringDeserializer classes, but for sending Json data format
+ we can use SpringBoot Kafka serialisation implementation. 
 
 
 ### Guides

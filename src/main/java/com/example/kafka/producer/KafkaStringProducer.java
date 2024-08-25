@@ -8,11 +8,11 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 @Slf4j
-public class KafkaProducer {
+public class KafkaStringProducer {
     private final KafkaTemplate<String, String> kafkaTemplate;
 
     public void send( String message) {
-        String topic="orderTopic";
+        String topic="message";
         log.info("sending message: {}", message);
         kafkaTemplate.send(topic, message);
     }

@@ -9,9 +9,15 @@ import org.springframework.kafka.config.TopicBuilder;
 public class KafkaTopicConfig {
 
     @Bean
-    public NewTopic eventOrderTopic(){
+    public NewTopic messageTopic(){
         return TopicBuilder
-                .name("orderTopic")
+                .name("message")
+                .build();
+    }
+    @Bean
+    public NewTopic userTopic(){
+        return TopicBuilder
+                .name("user")
                 .build();
     }
 }
