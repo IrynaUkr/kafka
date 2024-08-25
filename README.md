@@ -94,8 +94,8 @@ for the first version it is done for String.
 
 
 ### Guides
-https://www.youtube.com/watch?v=KQDTtvZMS9c&t=939s
-https://www.baeldung.com/spring-kafka
+* https://www.youtube.com/watch?v=KQDTtvZMS9c&t=939s
+* https://www.baeldung.com/spring-kafka
 
 
 
